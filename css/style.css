@@ -1,8 +1,9 @@
 body {
 
     font-family: arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 20px;
+    color: #333;
 
 }
 
@@ -79,3 +80,50 @@ button {
     border-radius: 12 px;
 
 }
+
+.feature-box, .member {
+
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+h1 {
+
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.feature-box: hover {
+
+    transform: translateY (-5PX);
+    Box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition:0.3;
+}
+
+
+.feature-box, .member {
+
+    transition: 0.3s;
+}
+
+member:hover {
+
+    transform: scale (1.03);
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba (0,0,0,0.2);
+
+}
+
