@@ -1,3 +1,15 @@
+
+.sticky-header {
+
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
+}
+
+
 body {
 
     font-family: arial, sans-serif;
@@ -119,11 +131,26 @@ h3 {
     transition: 0.3s;
 }
 
-member:hover {
+.member:hover {
 
     transform: scale (1.03);
     transition: 0.3s;
     box-shadow: 0 8px 20px rgba (0,0,0,0.2);
 
 }
+
+.float-btn {
+
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4f74f9;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    
+}
+
 
