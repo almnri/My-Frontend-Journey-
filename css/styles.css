@@ -306,3 +306,54 @@ nav ul {
         width: 90%;
     }
 }
+
+{
+*box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+    body{
+        padding:10px;
+    }
+
+    .features,
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box,
+    .member {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    body {
+
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .features,
+    .team {
+
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    .feature-box,
+    .member {
+
+        max-width: 300px;
+    }
+}
