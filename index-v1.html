@@ -1,206 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Mansouri - Frontend Develper</title>
-    <link href="css/styles.css" rel="stylesheet">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Mansouri - Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
-        <header>
+  <!-- Sticky Header -->
+  <header class="sticky-header">
+    <div class="container">
+      <h1 class="logo">Ali Mansouri</h1>
 
-    
-        <header class="sticky-header">
-            <h1>My Portfolio</h1>
-
-        </header>
-
-        <main>
-
-       
-        <h2> Welcome to My First Website</h2>
-        <p>My Name is <strong> Ali Mansouri</strong>
-
-         and I am learning Frontend Development.</p>
-
-    
-    <hr>
-     
-    <section>
-
-      <h2> My photo</h2>
-      <img src="images/profile.jpg" alt="My Profile Photo" width="250">
-
-    </section>
-
-    <hr>
-
-    <section class="about">
-
-        <h2>About Me</h2>
-    <p>I'm from Iran and I'm learning web development because I enjoy problem-solving,
-      creativity, and continuous learning.</p>
-
-    </section>
-
-    <hr>
-
-    </section>
-
-        <h2> My Learning Progress</h2>
-        <table border="1" cellpadding="10">
-    <tr>
-
-      <th> Day </th>
-      <th>What I Learned</th>
-
-    </tr>
-    <Tr>
-
-    <td>Day 1</td>
-    <td> Basic HTML</td>
-
-   </Tr>
-
-   <Tr>
-
-    <td> Day 2 </td>
-    <td> Links. Lists, GitHub Deployment </td>
-
-   </tr>
-
-    <tr>
-
-        <td> Day 3</td>
-        <td> Semantic Tags+ Form + Table </td>
-
-            </tr>
-            </table>
-    </section>
-
-    <hr>
-
-    <section class="skills">
-
-        <h2>My Skills</h2>
-        <ul>
-            <li> HTML Basics</li>
-            <Li> CSS Basics</li>
-                <li>Git & GitHub</li>
-                <li>Layout and spacing practice</li>
-
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section>
 
-        <hr>
-        
-        <section>
-            <div class="float-btn">contact me</div>
-    
-        <h2>Contact Me</h2>
-        <form>
-            <label>Your Name</label><br>
-            <input type="text" required><br><br>
+  <main class="container">
 
-            <lable> Your Email</lable><br>
-            <input type="email" required><br><br>
-
-            <lable>Message:</lable><br>
-            <textarea rows="4"></textarea> <br><br>
-
-            <button type="submit">send</button>
-            
-            <form>
-
-        </section>
-
-    <hr>
-   
-    <section class="features">
-        <div class="feature-box">
-
-            <h3> feature one </h3>
-            <p> This is a simple flexbox card.</p>
-            
-        </div>
-        <div class="feature-box">
-            <h3>feature Two </h3>
-           
-         <p> Flexbox helps align boxes beautifuly </p>
-
-        </div>
-
-        <div class="feature-box">
-
-            <h3> feature Three </h3>
-
-            <p> You're learning real layout skills now!</p>
-
-        </div>
-
+    <!-- Hero -->
+    <section id="hero">
+      <h1>Hi, I'm Ali 👋</h1>
+      <p>Frontend Developer in Progress — learning every single day!</p>
     </section>
 
-    <section class="team">
-        <div class=" member">
-              <img src="images/person1.jpg" alt="TeamMember">
+    <hr>
 
-              <h3>Member one</h3>
-              <p>Frontend Developer</p>
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm from Iran and I'm learning web development because I enjoy
+        problem-solving, creativity, and continuous learning.
+      </p>
 
-              </div>
+      <img src="images/profile.jpg" alt="My Profile Photo" width="250">
+    </section>
 
-              <div class="Member">
-                <img src="images/person2.jpg" alt="TeamMember">
+    <hr>
 
-                <h3>Member Two</h3>
-              <p>UI designer </p>
+    <!-- Learning Progress Table -->
+    <section>
+      <h2>My Learning Progress</h2>
 
+      <table border="1" cellpadding="10">
+        <tr>
+          <th>Day</th>
+          <th>What I Learned</th>
+        </tr>
+        <tr>
+          <td>Day 1</td>
+          <td>Basic HTML</td>
+        </tr>
+        <tr>
+          <td>Day 2</td>
+          <td>Links, Lists, GitHub Deployment</td>
+        </tr>
+        <tr>
+          <td>Day 3</td>
+          <td>Semantic Tags, Forms, Tables</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+
+      <ul>
+        <li>HTML Basics</li>
+        <li>CSS Basics</li>
+        <li>Git & GitHub</li>
+        <li>Layout and spacing practice</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Feature Cards (Flexbox) -->
+    <section class="features">
+      <div class="feature-box">
+        <h3>Feature One</h3>
+        <p>This is a simple flexbox card.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Feature Two</h3>
+        <p>Flexbox helps align boxes beautifully.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Feature Three</h3>
+        <p>You're learning real layout skills now!</p>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Team (Grid) -->
+    <section class="team container">
+      <h2>Team Members</h2>
+
+      <div class="team-grid">
+
+        <div class="member">
+          <img src="images/person1.jpg" alt="Team Member">
+          <h3>Member One</h3>
+          <p>Frontend Developer</p>
         </div>
 
         <div class="member">
-            <img src="images/person3.jpg" alt="TeamMember">
-
-            <h3> Member Three </h3>
-            <p> Product Manager</p>
+          <img src="images/person2.jpg" alt="Team Member">
+          <h3>Member Two</h3>
+          <p>UI Designer</p>
         </div>
+
+        <div class="member">
+          <img src="images/person3.jpg" alt="Team Member">
+          <h3>Member Three</h3>
+          <p>Product Manager</p>
+        </div>
+
+      </div>
     </section>
-    
-    <section class="projects">
 
-        <div class="projects-grid">
+    <hr>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
 
         <div class="project-card">
-            <img src="images/project1.jpg" alt="project 1">
-            <h3>Project one</h3>
-            <p>short description</p>
+          <img src="images/project1.jpg" alt="Project 1">
+          <h3>Project One</h3>
+          <p>Short description</p>
         </div>
 
         <div class="project-card">
-            <img src="images/project2.jpg" alt="project 2">
-            <h3>project Two</h3>
-            <p>Short description</p>
-        
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>Project Two</h3>
+          <p>Short description</p>
         </div>
 
         <div class="project-card">
-            <img src="images/project3.jpg" alt="project 3">
-            <h3>project Three</h3>
-            <p>Short description</p>
-        
+          <img src="images/project3.jpg" alt="Project 3">
+          <h3>Project Three</h3>
+          <p>Short description</p>
         </div>
 
-    </div>
-    
-        </section>
-    
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        <p>Made with &#128151 by Ali Mansouri</p>
+    <hr>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="float-btn">Contact Me</div>
+
+      <h2>Contact Me</h2>
+
+      <form>
+        <label>Your Name</label><br>
+        <input type="text" required><br><br>
+
+        <label>Your Email</label><br>
+        <input type="email" required><br><br>
+
+        <label>Message</label><br>
+        <textarea rows="4"></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>Made with ❤️ by Ali Mansouri</p>
+  </footer>
 
 </body>
 </html>
-
