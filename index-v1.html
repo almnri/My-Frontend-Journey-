@@ -9,13 +9,13 @@
 
 <body>
 
-  <!-- Sticky Header -->
+  <!-- Header -->
   <header class="sticky-header">
     <div class="container header-flex">
       <h1 class="logo">Ali Mansouri</h1>
 
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#services">Services</a></li>
@@ -28,31 +28,39 @@
   </header>
 
 
+  <!-- Main Content -->
   <main class="container">
 
     <!-- Hero -->
     <section id="hero">
-      <h1>Hi, I'm Ali 👋</h1>
+      <h2>Hi, I'm Ali 👋</h2>
       <p>Frontend Developer in Progress — learning every single day!</p>
     </section>
 
     <!-- About -->
     <section id="about">
       <h2>About Me</h2>
-      <p>I'm from Iran and I'm learning web development because I enjoy
-      problem-solving, creativity, and continuous learning.</p>
 
-      <img src="images/profile.jpg" alt="My Profile Photo" width="250">
+      <article>
+        <p>
+          I'm from Iran and I'm learning web development because I enjoy
+          problem-solving, creativity, and continuous learning.
+        </p>
+
+        <img src="images/profile.jpg" alt="My Profile Photo" width="250">
+      </article>
     </section>
 
+
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="skills">
       <h2>My Skills</h2>
-      <ul class="skill-list">
+
+      <ul>
         <li>HTML Basics</li>
         <li>CSS Basics</li>
         <li>Git & GitHub</li>
-        <li>Layout and spacing practice</li>
+        <li>Layout and Spacing Practice</li>
       </ul>
     </section>
 
@@ -61,21 +69,23 @@
     <section id="services">
       <h2>My Services</h2>
 
-      <div class="grid">
-        <div class="service-card">
-          <h3>Web Page Layout</h3>
-          <p>I build clean and structured layouts using HTML & CSS.</p>
-        </div>
+      <div class="services-grid">
 
-        <div class="service-card">
+        <article class="service-card">
+          <h3>Web Page Layout</h3>
+          <p>I build clean and structured web page layouts using HTML & CSS.</p>
+        </article>
+
+        <article class="service-card">
           <h3>Responsive Design</h3>
           <p>Your website will look great on mobile, tablet and desktop.</p>
-        </div>
+        </article>
 
-        <div class="service-card">
+        <article class="service-card">
           <h3>UI Components</h3>
-          <p>I create reusable sections and cards for websites.</p>
-        </div>
+          <p>I create reusable cards, sections and layouts for websites.</p>
+        </article>
+
       </div>
     </section>
 
@@ -84,24 +94,26 @@
     <section id="projects">
       <h2>Projects</h2>
 
-      <div class="grid">
-        <div class="project-card">
-          <img src="images/project1.jpg">
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <img src="images/project1.jpg" alt="Project 1">
           <h3>Project One</h3>
           <p>Short description</p>
-        </div>
+        </article>
 
-        <div class="project-card">
-          <img src="images/project2.jpg">
+        <article class="project-card">
+          <img src="images/project2.jpg" alt="Project 2">
           <h3>Project Two</h3>
           <p>Short description</p>
-        </div>
+        </article>
 
-        <div class="project-card">
-          <img src="images/project3.jpg">
+        <article class="project-card">
+          <img src="images/project3.jpg" alt="Project 3">
           <h3>Project Three</h3>
           <p>Short description</p>
-        </div>
+        </article>
+
       </div>
     </section>
 
@@ -110,24 +122,26 @@
     <section id="team">
       <h2>Team Members</h2>
 
-      <div class="grid">
-        <div class="team-card">
-          <img src="images/person1.jpg">
+      <div class="team-grid">
+
+        <article class="team-card">
+          <img src="images/person1.jpg" alt="Team Member">
           <h3>Member One</h3>
           <p>Frontend Developer</p>
-        </div>
+        </article>
 
-        <div class="team-card">
-          <img src="images/person2.jpg">
+        <article class="team-card">
+          <img src="images/person2.jpg" alt="Team Member">
           <h3>Member Two</h3>
           <p>UI Designer</p>
-        </div>
+        </article>
 
-        <div class="team-card">
-          <img src="images/person3.jpg">
+        <article class="team-card">
+          <img src="images/person3.jpg" alt="Team Member">
           <h3>Member Three</h3>
           <p>Product Manager</p>
-        </div>
+        </article>
+
       </div>
     </section>
 
@@ -139,14 +153,14 @@
       <h2>Contact Me</h2>
 
       <form>
-        <label>Your Name</label>
-        <input type="text" required>
+        <label>Your Name</label><br>
+        <input type="text" required><br><br>
 
-        <label>Your Email</label>
-        <input type="email" required>
+        <label>Your Email</label><br>
+        <input type="email" required><br><br>
 
-        <label>Message</label>
-        <textarea rows="4"></textarea>
+        <label>Message</label><br>
+        <textarea rows="4"></textarea><br><br>
 
         <button type="submit">Send</button>
       </form>

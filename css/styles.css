@@ -3,7 +3,7 @@
 body {
   font-family: Arial, sans-serif;
   background: #f5f5f5;
-  line-height: 1.7;
+  line-height: 1.8;
   margin: 0;
 }
 
@@ -29,98 +29,104 @@ body {
   align-items: center;
 }
 
-nav {
-  background: #0a74da;
-  padding: 12px 18px;
-}
+.logo { color: #1877f2; }
+
+/* ---------- Nav ---------- */
+
+nav { background: #0a74da; padding: 12px 18px; }
 
 nav ul {
-  display: flex;
   list-style: none;
-  gap: 24px;
-  margin: 0;
+  display: flex;
+  gap: 30px;
   padding: 0;
 }
 
 nav a {
   color: white;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
 }
 
 nav a:hover { text-decoration: underline; }
-
-h1,h2,h3 { color:#1877f2; }
 
 /* ---------- Sections ---------- */
 
 section {
   background: #fff;
-  margin: 24px 0;
+  margin: 20px 0;
   padding: 24px;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
-/* ---------- Shared Grid ---------- */
+h2 { color: #1877f2; }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 24px;
-}
+p { font-size: 18px; }
 
 /* ---------- Cards ---------- */
+
+.services-grid,
+.projects-grid,
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
 
 .service-card,
 .project-card,
 .team-card {
-  background:#fff;
-  padding:18px;
-  border-radius:12px;
-  box-shadow:0 6px 18px rgba(0,0,0,.1);
-  transition:.25s;
-  text-align:center;
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  text-align: center;
+  transition: .25s;
 }
 
 .service-card:hover,
 .project-card:hover,
 .team-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
 }
 
 /* ---------- Images ---------- */
-img { width:100%; border-radius:10px; }
+
+img { width: 100%; border-radius: 10px; }
 
 /* ---------- Floating Button ---------- */
+
 .float-btn {
-  position:fixed;
-  bottom:18px;
-  right:18px;
-  background:#4f74f9;
-  color:#fff;
-  padding:12px 18px;
-  border-radius:40px;
-}
-
-/* ---------- Forms ---------- */
-input, textarea {
-  width:100%;
-  margin:6px 0 12px;
-  padding:10px;
-  border-radius:6px;
-  border:1px solid #ccc;
-}
-
-button {
-  background:#1a73e8;
-  color:#fff;
-  border:none;
-  padding:10px 16px;
-  border-radius:6px;
-  cursor:pointer;
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  background: #4f74f9;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 40px;
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width:768px){
-  nav ul { flex-direction:column; gap:10px; }
+
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
