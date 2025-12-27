@@ -11,14 +11,16 @@
 
   <!-- Sticky Header -->
   <header class="sticky-header">
-    <div class="container">
+    <div class="container header-flex">
       <h1 class="logo">Ali Mansouri</h1>
 
       <nav>
-        <ul class="nav-links">
+        <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -34,26 +36,19 @@
       <p>Frontend Developer in Progress — learning every single day!</p>
     </section>
 
-    <hr>
-
     <!-- About -->
     <section id="about">
       <h2>About Me</h2>
-      <p>
-        I'm from Iran and I'm learning web development because I enjoy
-        problem-solving, creativity, and continuous learning.
-      </p>
+      <p>I'm from Iran and I'm learning web development because I enjoy
+      problem-solving, creativity, and continuous learning.</p>
 
       <img src="images/profile.jpg" alt="My Profile Photo" width="250">
     </section>
-  
-    <hr>
 
     <!-- Skills -->
-    <section id="skills" class="skills">
+    <section id="skills">
       <h2>My Skills</h2>
-
-      <ul>
+      <ul class="skill-list">
         <li>HTML Basics</li>
         <li>CSS Basics</li>
         <li>Git & GitHub</li>
@@ -61,90 +56,81 @@
       </ul>
     </section>
 
-    <hr>
 
-      <section class="services container">
+    <!-- Services -->
+    <section id="services">
       <h2>My Services</h2>
-    
-      <div class="services-grid">
-    
+
+      <div class="grid">
         <div class="service-card">
           <h3>Web Page Layout</h3>
-          <p>I build clean and structured web page layouts using HTML & CSS.</p>
+          <p>I build clean and structured layouts using HTML & CSS.</p>
         </div>
-    
+
         <div class="service-card">
           <h3>Responsive Design</h3>
           <p>Your website will look great on mobile, tablet and desktop.</p>
         </div>
-    
+
         <div class="service-card">
           <h3>UI Components</h3>
-          <p>I create reusable cards, sections and layouts for websites.</p>
+          <p>I create reusable sections and cards for websites.</p>
         </div>
-    
       </div>
     </section>
 
-    <hr>
-    
-    <!-- Projects Grid -->
-    <section id="projects" class="projects container">
+
+    <!-- Projects -->
+    <section id="projects">
       <h2>Projects</h2>
 
-      <div class="projects-grid">
-
+      <div class="grid">
         <div class="project-card">
-          <img src="images/project1.jpg" alt="Project 1">
+          <img src="images/project1.jpg">
           <h3>Project One</h3>
           <p>Short description</p>
         </div>
 
         <div class="project-card">
-          <img src="images/project2.jpg" alt="Project 2">
+          <img src="images/project2.jpg">
           <h3>Project Two</h3>
           <p>Short description</p>
         </div>
 
         <div class="project-card">
-          <img src="images/project3.jpg" alt="Project 3">
+          <img src="images/project3.jpg">
           <h3>Project Three</h3>
           <p>Short description</p>
         </div>
-
       </div>
     </section>
 
-    <hr>
 
-    <!-- Team (Grid) -->
-    <section class="team container">
+    <!-- Team -->
+    <section id="team">
       <h2>Team Members</h2>
 
-      <div class="team-grid">
-
+      <div class="grid">
         <div class="team-card">
-          <img src="images/person1.jpg" alt="Team Member">
+          <img src="images/person1.jpg">
           <h3>Member One</h3>
           <p>Frontend Developer</p>
         </div>
 
         <div class="team-card">
-          <img src="images/person2.jpg" alt="Team Member">
+          <img src="images/person2.jpg">
           <h3>Member Two</h3>
           <p>UI Designer</p>
         </div>
 
         <div class="team-card">
-          <img src="images/person3.jpg" alt="Team Member">
+          <img src="images/person3.jpg">
           <h3>Member Three</h3>
           <p>Product Manager</p>
         </div>
-
       </div>
     </section>
 
-    <hr>
 
     <!-- Contact -->
     <section id="contact">
@@ -153,14 +139,14 @@
       <h2>Contact Me</h2>
 
       <form>
-        <label>Your Name</label><br>
-        <input type="text" required><br><br>
+        <label>Your Name</label>
+        <input type="text" required>
 
-        <label>Your Email</label><br>
-        <input type="email" required><br><br>
+        <label>Your Email</label>
+        <input type="email" required>
 
-        <label>Message</label><br>
-        <textarea rows="4"></textarea><br><br>
+        <label>Message</label>
+        <textarea rows="4"></textarea>
 
         <button type="submit">Send</button>
       </form>
