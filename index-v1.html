@@ -9,167 +9,164 @@
 
 <body>
 
-  <!-- Header -->
-  <header class="sticky-header">
-    <div class="container header-flex">
-      <h1 class="logo">Ali Mansouri</h1>
+<header class="sticky-header">
+  <div class="container header-flex">
+    <h1 class="logo">Ali Mansouri</h1>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-
-    <!-- Hero -->
-    <section id="hero">
-      <h2>Hi, I'm Ali 👋</h2>
-      <p>Frontend Developer in Progress — learning and building every day.</p>
-      <button class="primary-btn">View My Work</button>
-    </section>
-
-    <hr>
-
-    <!-- About -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm from Iran and I’m learning web development because I enjoy
-        problem-solving, creativity, and continuous learning.
-      </p>
-
-      <img src="images/profile.jpg" alt="Ali Mansouri Profile Photo" width="250">
-    </section>
-
-    <hr>
-
-    <!-- Skills -->
-    <section id="skills" class="skills">
-      <h2>My Skills</h2>
-
-      <ul>
-        <li>HTML Basics</li>
-        <li>CSS Basics</li>
-        <li>Git & GitHub</li>
-        <li>Layout and Spacing Practice</li>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </section>
+    </nav>
+  </div>
+</header>
 
-    <hr>
 
-    <!-- Services -->
-    <section class="services container">
-      <h2>My Services</h2>
+<main class="container">
 
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>Web Page Layout</h3>
-          <p>I build clean and structured web page layouts using HTML & CSS.</p>
-        </div>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <h1>Hi, I'm Ali 👋</h1>
+    <p class="hero-subtitle">Frontend Developer in Progress — learning every single day</p>
+  </section>
 
-        <div class="service-card">
-          <h3>Responsive Design</h3>
-          <p>Your website will look great on mobile, tablet and desktop.</p>
-        </div>
 
-        <div class="service-card">
-          <h3>UI Components</h3>
-          <p>I create reusable cards, sections and layouts for websites.</p>
-        </div>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm from Iran and I'm learning web development because I enjoy
+      problem-solving, creativity, and continuous learning.
+    </p>
+
+    <img src="images/profile.jpg" alt="My Profile Photo" class="profile-img">
+  </section>
+
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+
+    <ul>
+      <li>HTML Basics</li>
+      <li>CSS Basics</li>
+      <li>Git & GitHub</li>
+      <li>Layout & Spacing Practice</li>
+    </ul>
+  </section>
+
+
+  <!-- Services -->
+  <section class="services">
+    <h2>My Services</h2>
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <h3>Web Page Layout</h3>
+        <p>I build clean and structured web page layouts using HTML & CSS.</p>
       </div>
-    </section>
 
-    <hr>
-
-    <!-- Projects -->
-    <section id="projects" class="projects container">
-      <h2>Projects</h2>
-
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <img src="images/project1.jpg" alt="Landing page project example">
-          <h3>Project One</h3>
-          <p>Short description</p>
-        </div>
-
-        <div class="project-card">
-          <img src="images/project2.jpg" alt="Website layout sample project">
-          <h3>Project Two</h3>
-          <p>Short description</p>
-        </div>
-
-        <div class="project-card">
-          <img src="images/project3.jpg" alt="UI components project">
-          <h3>Project Three</h3>
-          <p>Short description</p>
-        </div>
-
+      <div class="card">
+        <h3>Responsive Design</h3>
+        <p>Your website will look great on mobile, tablet and desktop.</p>
       </div>
-    </section>
 
-    <hr>
-
-    <!-- Team -->
-    <section class="team container">
-      <h2>Team Members</h2>
-
-      <div class="team-grid">
-
-        <div class="team-card">
-          <img src="images/person1.jpg" alt="Frontend Developer">
-          <h3>Member One</h3>
-          <p>Frontend Developer</p>
-        </div>
-
-        <div class="team-card">
-          <img src="images/person2.jpg" alt="UI Designer">
-          <h3>Member Two</h3>
-          <p>UI Designer</p>
-        </div>
-
-        <div class="team-card">
-          <img src="images/person3.jpg" alt="Product Manager">
-          <h3>Member Three</h3>
-          <p>Product Manager</p>
-        </div>
-
+      <div class="card">
+        <h3>UI Components</h3>
+        <p>I create reusable cards, sections and layouts for websites.</p>
       </div>
-    </section>
 
-    <hr>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="float-btn">Contact Me</div>
 
-      <h2>Contact Me</h2>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
 
-      <form>
-        <label>Your Name</label><br>
-        <input type="text" required><br><br>
+    <div class="cards-grid">
 
-        <label>Your Email</label><br>
-        <input type="email" required><br><br>
+      <div class="card">
+        <img src="images/project1.jpg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Short description</p>
+      </div>
 
-        <label>Message</label><br>
-        <textarea rows="4"></textarea><br><br>
+      <div class="card">
+        <img src="images/project2.jpg" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Short description</p>
+      </div>
 
-        <button type="submit">Send</button>
-      </form>
-    </section>
+      <div class="card">
+        <img src="images/project3.jpg" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>Short description</p>
+      </div>
 
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    <p>Made with ❤️ by Ali Mansouri</p>
-  </footer>
+
+  <!-- Team -->
+  <section class="team">
+    <h2>Team Members</h2>
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <img src="images/person1.jpg" alt="Team Member">
+        <h3>Member One</h3>
+        <p>Frontend Developer</p>
+      </div>
+
+      <div class="card">
+        <img src="images/person2.jpg" alt="Team Member">
+        <h3>Member Two</h3>
+        <p>UI Designer</p>
+      </div>
+
+      <div class="card">
+        <img src="images/person3.jpg" alt="Team Member">
+        <h3>Member Three</h3>
+        <p>Product Manager</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+      <label>Your Name</label>
+      <input type="text" required>
+
+      <label>Your Email</label>
+      <input type="email" required>
+
+      <label>Message</label>
+      <textarea rows="4"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="float-btn">Contact Me</div>
+  </section>
+
+</main>
+
+
+<footer>
+  <p>Made with ❤️ by Ali Mansouri</p>
+</footer>
 
 </body>
 </html>
