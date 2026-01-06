@@ -3,170 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ali Mansouri - Portfolio</title>
+  <title>Ali Mansouri - Frontend Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
 
-<header class="sticky-header">
-  <div class="container header-flex">
-    <h1 class="logo">Ali Mansouri</h1>
+  <!-- Sticky Header -->
+  <header class="sticky-header">
+    <div class="container header-flex">
+      <h1 class="logo">Ali Mansouri</h1>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <!-- Hero -->
+    <section id="hero">
+      <h1>Junior Frontend Developer in Training</h1>
+      <p>I am actively learning and building real-world projects using HTML, CSS and layout best-practices.</p>
+
+      <a class="cta-btn" href="#projects">View My Work</a>
+    </section>
+
+    <hr>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm learning frontend development because I enjoy problem-solving,
+        building useful things and improving my skills every single day.
+      </p>
+
+      <img src="images/profile.jpg" alt="My Profile Photo" width="260">
+    </section>
+
+    <hr>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+
+      <ul>
+        <li>Semantic HTML</li>
+        <li>Modern CSS & Layout</li>
+        <li>Flexbox & Grid</li>
+        <li>Git & GitHub</li>
       </ul>
-    </nav>
-  </div>
-</header>
+    </section>
 
+    <hr>
 
-<main class="container">
+    <!-- Projects Grid -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
 
-  <!-- Hero -->
-  <section id="hero" class="hero">
-    <h1>Hi, I'm Ali 👋</h1>
-    <p class="hero-subtitle">Frontend Developer in Progress — learning every single day</p>
-  </section>
+      <div class="projects-grid">
 
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Landing Page Project">
+          <h3>Landing Page Layout</h3>
+          <p>A clean and responsive landing page built with semantic HTML & CSS Grid.</p>
+        </div>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm from Iran and I'm learning web development because I enjoy
-      problem-solving, creativity, and continuous learning.
-    </p>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Services Section">
+          <h3>Services Section</h3>
+          <p>Reusable UI cards component designed with Flexbox and spacing principles.</p>
+        </div>
 
-    <img src="images/profile.jpg" alt="My Profile Photo" class="profile-img">
-  </section>
+        <div class="project-card">
+          <img src="images/project3.jpg" alt="Team Grid">
+          <h3>Team Grid</h3>
+          <p>Modern responsive profile grid with hover effects and consistent layout.</p>
+        </div>
 
-
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <h2>My Skills</h2>
-
-    <ul>
-      <li>HTML Basics</li>
-      <li>CSS Basics</li>
-      <li>Git & GitHub</li>
-      <li>Layout & Spacing Practice</li>
-    </ul>
-  </section>
-
-
-  <!-- Services -->
-  <section class="services">
-    <h2>My Services</h2>
-
-    <div class="cards-grid">
-
-      <div class="card">
-        <h3>Web Page Layout</h3>
-        <p>I build clean and structured web page layouts using HTML & CSS.</p>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Responsive Design</h3>
-        <p>Your website will look great on mobile, tablet and desktop.</p>
-      </div>
+    <hr>
 
-      <div class="card">
-        <h3>UI Components</h3>
-        <p>I create reusable cards, sections and layouts for websites.</p>
-      </div>
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
 
-    </div>
-  </section>
+      <form>
+        <label>Your Name</label><br>
+        <input type="text" required><br><br>
 
+        <label>Your Email</label><br>
+        <input type="email" required><br><br>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
+        <label>Message</label><br>
+        <textarea rows="4"></textarea><br><br>
 
-    <div class="cards-grid">
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-      <div class="card">
-        <img src="images/project1.jpg" alt="Project 1">
-        <h3>Project One</h3>
-        <p>Short description</p>
-      </div>
-
-      <div class="card">
-        <img src="images/project2.jpg" alt="Project 2">
-        <h3>Project Two</h3>
-        <p>Short description</p>
-      </div>
-
-      <div class="card">
-        <img src="images/project3.jpg" alt="Project 3">
-        <h3>Project Three</h3>
-        <p>Short description</p>
-      </div>
-
-    </div>
-  </section>
+  </main>
 
 
-  <!-- Team -->
-  <section class="team">
-    <h2>Team Members</h2>
-
-    <div class="cards-grid">
-
-      <div class="card">
-        <img src="images/person1.jpg" alt="Team Member">
-        <h3>Member One</h3>
-        <p>Frontend Developer</p>
-      </div>
-
-      <div class="card">
-        <img src="images/person2.jpg" alt="Team Member">
-        <h3>Member Two</h3>
-        <p>UI Designer</p>
-      </div>
-
-      <div class="card">
-        <img src="images/person3.jpg" alt="Team Member">
-        <h3>Member Three</h3>
-        <p>Product Manager</p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-
-    <form>
-      <label>Your Name</label>
-      <input type="text" required>
-
-      <label>Your Email</label>
-      <input type="email" required>
-
-      <label>Message</label>
-      <textarea rows="4"></textarea>
-
-      <button type="submit">Send</button>
-    </form>
-
-    <div class="float-btn">Contact Me</div>
-  </section>
-
-</main>
-
-
-<footer>
-  <p>Made with ❤️ by Ali Mansouri</p>
-</footer>
+  <footer>
+    <p>Made with ❤️ by Ali Mansouri</p>
+  </footer>
 
 </body>
 </html>

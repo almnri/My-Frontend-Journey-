@@ -3,8 +3,8 @@
 body{
   font-family:Arial, sans-serif;
   background:#f5f5f5;
-  margin:0;
   line-height:1.7;
+  margin:0;
 }
 
 .container{
@@ -13,7 +13,7 @@ body{
   padding:0 20px;
 }
 
-/* HEADER */
+/* Header */
 .sticky-header{
   position:sticky;
   top:0;
@@ -30,17 +30,16 @@ body{
 
 .logo{color:#1877f2}
 
-/* NAV */
+/* Nav */
 nav{
   background:#0a74da;
   padding:12px 18px;
 }
 
 nav ul{
+  list-style:none;
   display:flex;
   gap:28px;
-  list-style:none;
-  margin:0;
   padding:0;
 }
 
@@ -52,93 +51,65 @@ nav a{
 
 nav a:hover{text-decoration:underline}
 
-/* SECTION BASE */
+/* Sections */
 section{
   background:#fff;
-  margin:26px 0;
-  padding:26px;
-  border-radius:12px;
+  margin:24px 0;
+  padding:24px;
+  border-radius:10px;
 }
 
-h1,h2,h3{color:#1877f2}
-p{font-size:18px}
-
-/* HERO */
-.hero{
-  text-align:center;
-}
-.hero-subtitle{
-  color:#444;
-}
-
-/* IMAGE */
-img{
-  width:100%;
-  border-radius:12px;
-}
-.profile-img{
-  max-width:260px;
-  display:block;
-  margin:18px auto;
+/* Hero */
+#hero{text-align:center}
+.cta-btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 18px;
+  border-radius:8px;
+  background:#1877f2;
+  color:#fff;
+  text-decoration:none;
 }
 
-/* GRID CARDS (Unified Style) */
-.cards-grid{
+/* Projects Grid */
+.projects-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:22px;
+  gap:24px;
 }
 
-.card{
+.project-card{
   background:#fff;
   padding:18px;
   border-radius:14px;
   box-shadow:0 6px 18px rgba(0,0,0,.12);
+  transition:.25s;
   text-align:center;
-  transition:.28s;
 }
 
-.card:hover{
-  transform:translateY(-6px);
+.project-card img{
+  width:100%;
+  border-radius:10px;
 }
 
-/* BUTTON */
+.project-card:hover{
+  transform:translateY(-4px);
+}
+
+/* Contact */
 button{
   background:#1a73e8;
   color:#fff;
+  padding:10px 15px;
   border:none;
-  padding:10px 16px;
-  border-radius:8px;
+  border-radius:6px;
   cursor:pointer;
 }
 
-/* FLOATING BUTTON */
-.float-btn{
-  position:fixed;
-  bottom:18px;
-  right:18px;
-  background:#4f74f9;
-  padding:12px 18px;
-  color:#fff;
-  border-radius:40px;
+/* Responsive */
+@media (max-width:768px){
+  nav ul{flex-direction:column;gap:12px}
 }
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  nav ul{
-    flex-direction:column;
-    gap:12px;
-  }
-
-  .card{
-    max-width:360px;
-    margin:0 auto;
-  }
-}
-
-@media(min-width:1024px){
-  body{
-    max-width:1200px;
-    margin:0 auto;
-  }
+@media (min-width:1024px){
+  body{max-width:1200px;margin:0 auto}
 }
