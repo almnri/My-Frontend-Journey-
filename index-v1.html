@@ -9,115 +9,123 @@
 
 <body>
 
-  <!-- Sticky Header -->
-  <header class="sticky-header">
-    <div class="container header-flex">
-      <h1 class="logo">Ali Mansouri</h1>
+<header class="sticky-header">
+  <div class="container header-flex">
+    <h1 class="logo">Ali Mansouri</h1>
 
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-
-  <main class="container">
-
-    <!-- Hero -->
-    <section id="hero">
-      <h1>Junior Frontend Developer in Training</h1>
-      <p>I am actively learning and building real-world projects using HTML, CSS and layout best-practices.</p>
-
-      <a class="cta-btn" href="#projects">View My Work</a>
-    </section>
-
-    <hr>
-
-    <!-- About -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm learning frontend development because I enjoy problem-solving,
-        building useful things and improving my skills every single day.
-      </p>
-
-      <img src="images/profile.jpg" alt="My Profile Photo" width="260">
-    </section>
-
-    <hr>
-
-    <!-- Skills -->
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-
-      <ul>
-        <li>Semantic HTML</li>
-        <li>Modern CSS & Layout</li>
-        <li>Flexbox & Grid</li>
-        <li>Git & GitHub</li>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </section>
+    </nav>
+  </div>
+</header>
 
-    <hr>
+<main class="container">
 
-    <!-- Projects Grid -->
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
+  <!-- Hero -->
+  <section id="hero">
+    <h1>Junior Frontend Developer in Training</h1>
+    <p>Building real-world UI components and layouts while improving my skills every single day.</p>
+    <a class="cta-btn" href="#projects">View My Work</a>
+  </section>
 
-      <div class="projects-grid">
+  <hr>
 
-        <div class="project-card">
-          <img src="images/project1.jpg" alt="Landing Page Project">
-          <h3>Landing Page Layout</h3>
-          <p>A clean and responsive landing page built with semantic HTML & CSS Grid.</p>
-        </div>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I enjoy solving problems, learning continuously, and building clean and structured web layouts.</p>
+    <img src="images/profile.jpg" alt="Profile Photo" width="260">
+  </section>
 
-        <div class="project-card">
-          <img src="images/project2.jpg" alt="Services Section">
-          <h3>Services Section</h3>
-          <p>Reusable UI cards component designed with Flexbox and spacing principles.</p>
-        </div>
+  <hr>
 
-        <div class="project-card">
-          <img src="images/project3.jpg" alt="Team Grid">
-          <h3>Team Grid</h3>
-          <p>Modern responsive profile grid with hover effects and consistent layout.</p>
-        </div>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Semantic HTML</li>
+      <li>Modern CSS & Layout</li>
+      <li>Flexbox & Grid</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
 
+  <hr>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Landing Page Project">
+        <h3>Landing Page Layout</h3>
+        <p>A responsive landing page built using semantic HTML and CSS Grid.</p>
+        <a class="details-btn" href="#">View Case Study</a>
       </div>
-    </section>
 
-    <hr>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Services Section">
+        <h3>Services Section</h3>
+        <p>Reusable UI cards created with Flexbox and spacing principles.</p>
+        <a class="details-btn" href="#">View Case Study</a>
+      </div>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact Me</h2>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/project3.jpg" alt="Team Grid UI">
+        <h3>Team Grid</h3>
+        <p>A modern responsive team layout with hover effects and consistent structure.</p>
+        <a class="details-btn" href="#">View Case Study</a>
+      </div>
 
-      <form>
-        <label>Your Name</label><br>
-        <input type="text" required><br><br>
+    </div>
+  </section>
 
-        <label>Your Email</label><br>
-        <input type="email" required><br><br>
+  <hr>
 
-        <label>Message</label><br>
-        <textarea rows="4"></textarea><br><br>
+  <!-- Project Case Study Section -->
+  <section id="project-details">
+    <h2>Project Case Study — Example</h2>
 
-        <button type="submit">Send</button>
-      </form>
-    </section>
+    <p><strong>Goal:</strong> Practice layout structure, spacing and responsive grid design.</p>
+    <p><strong>What I learned:</strong> CSS Grid auto-fit, consistent typography scale, and cleaner component design.</p>
+    <p><strong>Next step:</strong> Convert this layout into a real-world landing page project.</p>
+  </section>
 
-  </main>
+  <hr>
 
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
 
-  <footer>
-    <p>Made with ❤️ by Ali Mansouri</p>
-  </footer>
+    <form>
+      <label>Your Name</label><br>
+      <input type="text" required><br><br>
+
+      <label>Your Email</label><br>
+      <input type="email" required><br><br>
+
+      <label>Message</label><br>
+      <textarea rows="4"></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>Made with ❤️ by Ali Mansouri</p>
+</footer>
 
 </body>
 </html>
